@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
+  <div class="contain">
+    <div class="jumbo">
+      <h1>Bienvenidos a Vue CLI</h1> 
+      <h2>Componente principal (App)</h2>
+      <br>
+
+      <Binding />
+      <Estructura />
+      <Atributos />
+
+    </div>
+  </div> 
+</template> <!-- seccion de vista-->
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Binding from './componentes/Binding.vue'
+import Estructura from './componentes/Estructura.vue'
+import Atributos from './componentes/Atributos.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Binding,
+    Estructura,
+    Atributos, 
   }
 }
-</script>
+</script> <!-- seccion de controlador-->
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+h1{
+  color: crimson;
 }
-</style>
+h2{
+  color: blue;
+}
+hr{
+  color:black;
+}
+</style> <!-- seccion de estilos-->
